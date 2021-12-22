@@ -1,4 +1,4 @@
-package studios;
+package studios.datatypes;
 
 public class Circle {
 

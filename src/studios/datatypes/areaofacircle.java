@@ -1,6 +1,6 @@
-package studios;
+package studios.datatypes;
 
-import org.launchcode.java.demos.lsn1datatypes.Message;
+import studios.datatypes.*;
 
 import java.util.Scanner;
 
