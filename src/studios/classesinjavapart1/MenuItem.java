@@ -13,13 +13,49 @@ public class MenuItem {
 
 
     public static void setMenuItems() {
-        int index = 0;
-        for (String i : menuItems) {
-            menuSerialNumbers += 1;
-                menuItems[index] = menuItems[index].replace("-", " ");
-                    menuByItemNames.put(menuItems[index], menuSerialNumbers);
-                        menuBySerialNumbers.put(menuSerialNumbers, menuItems[index]);
-                            System.out.println(menuByItemNames.get(menuItems[index]) + "  " + menuBySerialNumbers.get(menuSerialNumbers));
+
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "BBQ Chicken Nachos");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Appetizers");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 9.49);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Buffalo Chicken Wings");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Appetizers");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 5.99);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Potato Skins");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Appetizers");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 5.99);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Beef Brisket Dinner");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Dinner");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 12.99);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Half Rack of Ribs");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Dinner");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 16.99);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Pork Steak");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Dinner");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 13.99);
+
+        menuSerialNumbers += 1;
+        RawData.menuItemByName.put(menuSerialNumbers, "Rustic Apple Tart");
+        RawData.menuItemByCategory.put(menuSerialNumbers, "Dessert");
+        RawData.menuItemByPrice.put(menuSerialNumbers, 6.99);
+
+        System.out.println("\n");
+
+        Integer index = 10001;
+
+        for (int i = 0; i < RawData.menuItemByName.size(); i++) {
+            System.out.println(" (" + index + ") " + RawData.menuItemByCategory.get(index) + "  " + RawData.menuItemByName.get(index) + "  " + RawData.menuItemByPrice.get(index));
             index++;
         }
     }
