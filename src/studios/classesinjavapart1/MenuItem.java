@@ -50,6 +50,7 @@ public class MenuItem {
         RawData.menuItemByCategory.put(menuSerialNumbers, "Dessert");
         RawData.menuItemByPrice.put(menuSerialNumbers, 6.99);
 
+
         System.out.println("\n");
 
         Integer index = 10001;
