@@ -80,7 +80,6 @@ public class SchoolPractice2 {
         Teacher.getTeacherByLastName(79002);
         Teacher.getTeacherByLastName(79003);
 
-
         melvin.addGrade(90, 3.2);
         rob.addGrade(28, 3.2);
         arielle.addGrade(35, 3.2);
