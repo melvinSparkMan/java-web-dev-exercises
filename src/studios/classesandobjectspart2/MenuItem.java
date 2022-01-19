@@ -7,17 +7,18 @@ public class MenuItem {
 
      MenuOffering bbqWings = new MenuOffering();
 
-//     bbqWings.setDescription("BBQ Chicken Wings");
-//     bbqWings.setCategory("Appetizers");
-//     bbqWings.setPrice(7.99);
-//     bbqWings.setDate("31-01-2022");
 
-    public class MenuOffering {
+     bbqWings.setDescription("BBQ Chicken Wings");
+     bbqWings.setCategory("Appetizers");
+     bbqWings.setPrice(7.99);
+     bbqWings.setDate("31-01-2022");
 
-        public String description;
-        public String category;
-        public Double price;
-        public Date date;
+    public static class MenuOffering {
+
+        public static String description;
+        public static String category;
+        public static Double price;
+        public static Date date;
 
         public String getDescription() {
             return description;
@@ -50,7 +51,7 @@ public class MenuItem {
         public Date setDate() {
             Date getDate = new Date();
             SimpleDateFormat dateformat = new SimpleDateFormat("dd-M-yyyy");
-//            Date date = dateformat.parse(getDate.toString());
+            Date date = dateformat.parse(getDate.toString());
             return date;
         }
     }
