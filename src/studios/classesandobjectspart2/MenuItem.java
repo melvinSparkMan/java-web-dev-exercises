@@ -1,17 +1,10 @@
 package studios.classesandobjectspart2;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MenuItem {
 
-     MenuOffering bbqWings = new MenuOffering();
 
-
-     bbqWings.setDescription("BBQ Chicken Wings");
-     bbqWings.setCategory("Appetizers");
-     bbqWings.setPrice(7.99);
-     bbqWings.setDate("31-01-2022");
 
     public static class MenuOffering {
 
@@ -44,16 +37,17 @@ public class MenuItem {
             this.price = price;
         }
 
-        public Date getDate() {
+        public Date setDate(Date aDate) {
+            this.date = aDate;
             return date;
         }
 
-        public Date setDate() {
-            Date getDate = new Date();
-            SimpleDateFormat dateformat = new SimpleDateFormat("dd-M-yyyy");
-            Date date = dateformat.parse(getDate.toString());
-            return date;
-        }
+//        public Date setDate() {
+//            Date getDate = new Date();
+//            SimpleDateFormat dateformat = new SimpleDateFormat("dd-M-yyyy");
+//            Date date = dateformat.parse(getDate.toString());
+//            return date;
+//        }
     }
 
 }
