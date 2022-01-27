@@ -1,7 +1,7 @@
 package exercises.technology;
 
 public class SmartPhone {
-    public class Galaxy extends Desktop {
+    public class Galaxy extends Computer {
         public String getCodec() {
             return codec;
         }
@@ -10,6 +10,6 @@ public class SmartPhone {
             this.codec = codec;
         }
 
-        Galaxy.setCodec("GSM.CDMA");
+
     }
 }

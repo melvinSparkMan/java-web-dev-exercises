@@ -6,7 +6,7 @@ package exercises.technology;
         Double ram;
         String wifi;
 
-        public class Desktop(String microprocessor, Double ram, String wifi) {
+        public class Desktop{String microprocessor; Double ram; String wifi;} {
             this.microprocessor = microprocessor;
             this.ram = ram;
             this.wifi = wifi;
@@ -17,8 +17,8 @@ package exercises.technology;
             return microprocessor;
         }
 
-        public void setMicroprocessor(String microprocessor) {
-            this.microprocessor = microprocessor;
+        public void setMicroprocessor(String aMicroprocessor) {
+            this.microprocessor = aMicroprocessor;
         }
 
         public Double getRam(Double memoryInGigaBytes) {
