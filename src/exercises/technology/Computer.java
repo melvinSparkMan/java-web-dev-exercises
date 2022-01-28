@@ -6,7 +6,7 @@ package exercises.technology;
         Double ram;
         String wifi;
 
-        public class Desktop{String microprocessor; Double ram; String wifi;} {
+        public Computer(String microprocessor, Double ram, String wifi) {
             this.microprocessor = microprocessor;
             this.ram = ram;
             this.wifi = wifi;

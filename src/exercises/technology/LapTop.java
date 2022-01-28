@@ -2,18 +2,19 @@ package exercises.technology;
 
 public class LapTop {
 
-    public LapTop(String graphicsCard) {
-        this.graphicsCard = graphicsCard;
-    }
-
-    String graphicsCard;
-
-    public class Surface extends Computer {
+    Computer LapTop = new Computer( "QualComm-SnapDragon-860", 16, "802.11abgn");
+//    LapTop.Surface.setGraphicsCard("NvidiaGeForce");
 
 
+
+
+
+    public class Surface extends LapTop {
+
+        String graphicsCard;
 
         public void setGraphicsCard(String aGraphicsCard) {
-            Computer.graphicsCard = aGraphicsCard;
+            this.graphicsCard = aGraphicsCard;
         }
         public void setMicroprocessor(String aMicroprocessor) {
             this.microprocessor = aMicroprocessor;
