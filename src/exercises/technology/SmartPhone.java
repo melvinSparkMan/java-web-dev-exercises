@@ -1,7 +1,8 @@
 package exercises.technology;
 
 public class SmartPhone {
-    public class Galaxy extends Computer {
+    Computer Galaxy = new  Computer( "QualComm-SnapDragon-860", 16.0, "802.11abgn");
+    String codec;
         public String getCodec() {
             return codec;
         }
@@ -11,5 +12,5 @@ public class SmartPhone {
         }
 
 
-    }
+
 }

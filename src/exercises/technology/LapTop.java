@@ -2,7 +2,7 @@ package exercises.technology;
 
 public class LapTop {
 
-    Computer LapTop = new Computer( "QualComm-SnapDragon-860", 16, "802.11abgn");
+    Computer LapTop = new Computer( "QualComm-SnapDragon-860", 16.0, "802.11abgn");
 //    LapTop.Surface.setGraphicsCard("NvidiaGeForce");
 
 
@@ -17,10 +17,10 @@ public class LapTop {
             this.graphicsCard = aGraphicsCard;
         }
         public void setMicroprocessor(String aMicroprocessor) {
-            this.microprocessor = aMicroprocessor;
+            LapTop.microprocessor = aMicroprocessor;
         }
         public void setWifi(String wifi) {
-            this.wifi = wifi;
+            LapTop.wifi = wifi;
         }
 
     }

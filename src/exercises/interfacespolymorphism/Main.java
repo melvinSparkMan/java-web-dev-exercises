@@ -5,6 +5,8 @@ import org.launchcode.java.demos.lsn7interfaces.Cone;
 import org.launchcode.java.demos.lsn7interfaces.Flavor;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+
 
 public class Main {
     public static void main(String[] args){
@@ -12,9 +14,11 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
+        Comparator comparator = new FlavorComparator();
+
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
-
+        flavors.sort(comparator);
         // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost'
         //  field.
 

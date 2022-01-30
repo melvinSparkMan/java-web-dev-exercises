@@ -33,7 +33,7 @@ public class Quiz {
 
     public void runQuiz(){
         for (Object q : quiz) {
-            q.runQuestion();
+//            q.runQuestion();
         }
     }
 
